@@ -1,0 +1,199 @@
+article {
+  margin: auto;
+  width: 700px;
+}
+
+#author {
+  font-size: 14px;
+}
+
+body {
+  color: #222222;
+  font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 18px 0;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px solid #cccccc;
+  height: 80px;
+}
+
+header div,
+header h1 {
+  display: flex;
+  flex-grow: 1;
+}
+
+header div,
+header div span,
+header h1 {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+}
+
+header div {
+  justify-content: flex-end;
+}
+
+header div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #ffee00;
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+  margin: 0 3px;
+  transform: rotate(-30deg);
+}
+
+header h1 {
+  color: #ee3322;
+  font-family: 'Helvetica', sans-serif;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.choice-grid img.checkbox {
+  margin-top: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+p {
+  margin: 18px 0;
+}
+
+.question-name {
+  align-items: center;
+  display: flex;
+  height: 425px;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.question-name h1 {
+  background-color: rgba(255,255,255, 0.9);
+  color: black;
+  font-family: 'Pangolin', 'Trebuchet MS', cursive;
+  font-size: 60px;
+  padding: 10px;
+  max-width: 75%;
+}
+
+.choice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.immagine {
+  width: calc(32.5% - 22px);
+  display: flex;
+  background-color: #f4f4f4;
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.immagine img {
+  height: calc(100% - 36px);
+  width: 100%;
+}
+
+.selezionato {
+  background-color: #cfe3ff;
+}
+
+.nonselezionato {
+  opacity: 0.6;
+}
+
+button {
+  background-color: #cecece;
+  width: 100%;
+  height: 50px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.testo {
+  display: none;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+#tit, #cont {
+  margin-bottom: 18px;
+}
+
+.visibile {
+  display: block;
+}
+
+#prima {
+  background-image: url('./images/ortaggi.jpg');
+}
+
+#seconda {
+  background-image: url('./images/frutta.jpg');
+}
+
+#terza {
+  background-image: url('./images/cibo.jpg');
+}
+
+@media (max-width: 700px) {
+
+  article {
+    width: 95%;
+  }
+
+  header{
+      display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .immagine {
+      width: calc(49% - 22px);
+  }
+  
+}
+
+#view, #video-view {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#view .foto, #video-view .video{
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#video-view img {
+  max-width: 100%;
+}
